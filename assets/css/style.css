@@ -653,6 +653,10 @@ button, a { transition: var(--transition); }
   box-shadow: var(--shadow-2);
 }
 
+.property-address{
+  margin: 0px;
+}
+
 .property-card .card-banner {
   position: relative;
   aspect-ratio: 2 / 1.5;
@@ -738,9 +742,10 @@ button, a { transition: var(--transition); }
 
 .property-card .card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   row-gap: 15px;
+  padding: 0px;
 }
 
 .property-card .card-item {
@@ -791,7 +796,7 @@ button, a { transition: var(--transition); }
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 }
 
 .author-name > a:is(:hover, :focus) { color: var(--orange-soda); }
@@ -799,6 +804,7 @@ button, a { transition: var(--transition); }
 .author-title {
   color: var(--cadet);
   font-size: var(--fs-7);
+  margin: 0px;
 }
 
 .card-footer-actions {
