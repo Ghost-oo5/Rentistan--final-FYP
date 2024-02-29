@@ -8,6 +8,17 @@
   <title>Rentistan - Find your dream house</title>
 
   <!-- 
+    - Bootstrap Css
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- 
+    - Bootstrap Js
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -38,9 +49,9 @@
     <div class="overlay" data-overlay></div>
 
     <div class="header-top">
-      <div class="container">
+      <div class="container py-2">
 
-        <ul class="header-top-list">
+        <ul class="header-top-list m-0">
 
           <li>
             <a href="mailto:info@Rentistan.com" class="header-top-link">
@@ -54,14 +65,14 @@
             <a href="#" class="header-top-link">
               <ion-icon name="location-outline"></ion-icon>
 
-              <address>15/A, Nest Tower, NYC</address>
+              <address class="m-0">Chakwal, Punjab, Pakistan</address>
             </a>
           </li>
 
         </ul>
 
         <div class="wrapper">
-          <ul class="header-top-social-list">
+          <ul class="header-top-social-list m-0">
 
             <li>
               <a href="#" class="header-top-social-link">
@@ -117,24 +128,24 @@
           </div>
 
           <div class="navbar-bottom">
-            <ul class="navbar-list">
+            <ul class="navbar-list mb-0">
 
               <li>
                 <a href="#home" class="navbar-link" data-nav-link>Home</a>
               </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
-              </li>
-
+              
+                            <li>
+                              <a href="#about" class="navbar-link" data-nav-link>About</a>
+                            </li>
+              
               <li>
                 <a href="#service" class="navbar-link" data-nav-link>Service</a>
               </li>
-
+              
               <li>
                 <a href="#property" class="navbar-link" data-nav-link>Property</a>
               </li>
-
+              
               <li>
                 <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
               </li>
@@ -155,6 +166,12 @@
 
             <span>Search</span>
           </button>
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <a href="./login.html" target="_blank"> 
+              <ion-icon name="log-in-outline"></ion-icon>
+            </a>
+            <span>Search</span>
+          </button>
 
           <button class="header-bottom-actions-btn" aria-label="Profile">
             <ion-icon name="person-outline"></ion-icon>
@@ -173,7 +190,6 @@
 
             <span>Menu</span>
           </button>
-
         </div>
 
       </div>
@@ -192,29 +208,29 @@
         - #HERO
       -->
 
-      <section class="hero" id="home">
-        <div class="container">
+      <section class="hero sec-1" id="home">
+        <div class="container sec-1-container p-5 text-white d-flex justify-content-center text-center ">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">
+            <p class="hero-subtitle text-white justify-content-center ">
               <ion-icon name="home"></ion-icon>
 
-              <span>Real Estate Agency</span>
+              <span class="text-white">Real Estate Agency</span>
             </p>
 
-            <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
+            <h2 class="h1 hero-title text-white text-center">Find Your Dream House With Us</h2>
 
-            <p class="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
+            <p class="text-white text-center">
+              "Discover unparalleled living at Rentistan. Your dream space awaits – redefine your lifestyle
+              with our premium rental houses." </p>
 
             <button class="btn">Make An Enquiry</button>
 
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
+            <!-- <img src="./assets/images-2/Sec-1-bg.png" alt="Modern house model" class="w-100"> -->
           </figure>
 
         </div>
@@ -364,7 +380,7 @@
               </div>
             </li>
 
-            <li>
+            <!-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -387,7 +403,7 @@
                 </a>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
