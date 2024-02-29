@@ -2,15 +2,15 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Rentistan - About Us</title>
-    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='#' rel='stylesheet'>
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <link rel="shortcut icon" href="../../favicon.jpg" type="image/svg+xml">
-    <link rel="stylesheet" href="../css/style.css">
-    
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Rentistan - About Us</title>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='#' rel='stylesheet'>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link rel="shortcut icon" href="../../favicon.jpg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+
   <!-- 
     - google font link
   -->
@@ -19,18 +19,82 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-    
 
-    
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <style>
+    /*** Header ***/
+
+    .page-header {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+      background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../images-2/Sec-1-bg.png) center center no-repeat;
+      background-size: cover;
+    }
+
+    .page-header .breadcrumb-item+.breadcrumb-item::before {
+      color: #999999;
+    }
+
+    /*** Team ***/
+    .team-item img {
+      position: relative;
+      top: 0;
+      transition: .5s;
+    }
+
+    .team-item:hover img {
+      top: -30px;
+    }
+
+    .team-item .team-text {
+      position: relative;
+      height: 100px;
+      transition: .5s;
+    }
+
+    .team-item:hover .team-text {
+      margin-top: -60px;
+      height: 160px;
+    }
+
+    .team-item .team-text .team-social {
+      opacity: 0;
+      transition: .5s;
+    }
+
+    .team-item:hover .team-text .team-social {
+      opacity: 1;
+    }
+
+    .team-item .team-social .btn {
+      display: inline-flex;
+      color: var(--primary);
+      background: #FFFFFF;
+      border-radius: 40px;
+    }
+
+    .team-item .team-social .btn:hover {
+      color: #FFFFFF;
+      background: var(--primary);
+    }
+  </style>
 </head>
 
 <body>
-    <div class="">
-        <header class="header" data-header>
+  <div class="">
+    <header class="header" data-header>
 
-         
-        
-            <!-- <div class="header-top">
+
+
+      <!-- <div class="header-top">
               <div class="container py-2">
         
                 <ul class="header-top-list m-0">
@@ -87,291 +151,398 @@
         
               </div>
             </div> -->
-        
-            <div class="header-bottom">
-              <div class="container">
-        
-                <a href="#" class="logo">
-                  <img src="../images/logo1.png" alt="Rentistan logo">
-                </a>
-        
-                <nav class="navbar" data-navbar>
-        
-                  <div class="navbar-top">
-        
-                    <a href="#" class="logo">
-                      <img src="../images/logo1.png" alt="Rentistan logo">
-                    </a>
-        
-                    <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                      <ion-icon name="close-outline"></ion-icon>
-                    </button>
-        
-                  </div>
-        
-                  <div class="navbar-bottom">
-                    <ul class="navbar-list mb-0">
-        
-                      <li>
-                        <a href="../../index.html" class="navbar-link" data-nav-link>Home</a>
-                      </li>
-        
-                      <li>
-                        <a href="./About.html" class="navbar-link" data-nav-link>About</a>
-                      </li>
-        
-                      <li>
-                        <a href="./Services.html" class="navbar-link" data-nav-link>Service</a>
-                      </li>
-        
-                      <li>
-                        <a href="./Properties.html" class="navbar-link" data-nav-link>Property</a>
-                      </li>
-        
-                      <li>
-                        <a href="./Blogs.html" class="navbar-link" data-nav-link>Blog</a>
-                      </li>
-        
-                      <li>
-                        <a href="./Contact.html" class="navbar-link" data-nav-link>Contact</a>
-                      </li>
-        
-                    </ul>
-                  </div>
-        
-                </nav>
-        
-                <div class="header-bottom-actions">
-        
-                  <button class="header-bottom-actions-btn" aria-label="Search">
-                    <ion-icon name="search-outline"></ion-icon>
-        
-                    <span>Search</span>
-                  </button>
-                  <!-- <button class="header-bottom-actions-btn" aria-label="Search">
+
+      <div class="header-bottom">
+        <div class="container">
+
+          <a href="#" class="logo">
+            <img src="../images/logo1.png" alt="Rentistan logo">
+          </a>
+
+          <nav class="navbar" data-navbar>
+
+            <div class="navbar-top">
+
+              <a href="#" class="logo">
+                <img src="../images/logo1.png" alt="Rentistan logo">
+              </a>
+
+              <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+            <div class="navbar-bottom">
+              <ul class="navbar-list mb-0">
+
+                <li>
+                  <a href="../../index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+
+                <li>
+                  <a href="./About.html" class="navbar-link" data-nav-link>About</a>
+                </li>
+
+                <li>
+                  <a href="./Services.html" class="navbar-link" data-nav-link>Service</a>
+                </li>
+
+                <li>
+                  <a href="./Properties.html" class="navbar-link" data-nav-link>Property</a>
+                </li>
+
+                <li>
+                  <a href="./Blogs.html" class="navbar-link" data-nav-link>Blog</a>
+                </li>
+
+                <li>
+                  <a href="./Contact.html" class="navbar-link" data-nav-link>Contact</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </nav>
+
+          <div class="header-bottom-actions">
+
+            <button class="header-bottom-actions-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+
+              <span>Search</span>
+            </button>
+            <!-- <button class="header-bottom-actions-btn" aria-label="Search">
                     <a href="./login.html" target="_blank">
                       <ion-icon name="log-in-outline"></ion-icon>
                     </a>
                     <span>Login</span>
                   </button> -->
-        
-                  <button class="header-bottom-actions-btn" aria-label="Profile">
-                    <ion-icon name="person-outline"></ion-icon>
-        
-                    <span>Profile</span>
-                  </button>
-        
-                  <button class="header-bottom-actions-btn" aria-label="Cart">
-                    <ion-icon name="cart-outline"></ion-icon>
-        
-                    <span>Cart</span>
-                  </button>
-        
-                  <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-                    <ion-icon name="menu-outline"></ion-icon>
-        
-                    <span>Menu</span>
-                  </button>
+
+            <button class="header-bottom-actions-btn" aria-label="Profile">
+              <ion-icon name="person-outline"></ion-icon>
+
+              <span>Profile</span>
+            </button>
+
+            <button class="header-bottom-actions-btn" aria-label="Cart">
+              <ion-icon name="cart-outline"></ion-icon>
+
+              <span>Cart</span>
+            </button>
+
+            <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+              <ion-icon name="menu-outline"></ion-icon>
+
+              <span>Menu</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container text-center">
+        <h1 class="display-2 text-white animated slideInDown fw-bolder" style="font-weight: 500;">About Us</h1>
+      
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+              <img class="position-absolute w-100 h-100 pt-5 pe-5" src="../images-2/home.jpg" alt=""
+                style="object-fit: cover;">
+              
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <div class="section-subtitle float-start" style="margin-inline:unset;">About Us</div>
+              <h1 class="display-6 mb-3">Get yourself and your loved-ones a home</h1>
+              <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                <p class="text-dark mb-2">"Discover unparalleled living at Rentistan. Your dream space awaits – redefine
+                  your lifestyle
+                  with our premium rental houses."</p>
+                <span class="text-primary">Abdul Basit, Founder</span>
+              </div>
+              <p class="mb-5">A house, a haven of comfort and shelter, stands as a silent witness to the tapestry of
+                lives within its walls. With each brick and beam, it echoes the stories of laughter, love, and the
+                shared moments that make it a cherished home.</p>
+
+              <a class="btn btn-outline-primary py-2 px-3" href="./Contact.html">
+                Contact Us
+                <div class="d-inline-flex btn-sm-square  text-white rounded-circle ms-2">
+                  <i class="fa fa-arrow-right"></i>
                 </div>
-        
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <div class="section-subtitle">Team Members</div>
+          <h1 class="display-6 mb-5">Let's Meet With Our Team</h1>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+         
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="../images-2/Ehsan.jpg" alt="">
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Muhammad Ehsan ul Haq</h5>
+                <p class="text-primary">Back-End Developer </p>
+                <div class="team-social text-center d-flex justify-content-around">
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-instagram"></i></a>
+                </div>
               </div>
             </div>
-        
-          </header>
-
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="../images-2/Basit.jpg" alt="">
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Raja Abdul Basit</h5>
+                <p class="text-primary">Front-End Developer</p>
+                <div class="team-social text-center d-flex justify-content-around">
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="../images-2/saif.jpg" alt="">
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Saifullah Khan</h5>
+                <p class="text-primary">Researcher</p>
+                <div class="team-social text-center d-flex justify-content-around">
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="" style="font-size: 30px;" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
 
     <footer class="footer">
 
       <div class="footer-top">
         <div class="container">
-  
+
           <div class="footer-brand">
-  
+
             <a href="#" class="logo">
               <img src="../images/logo-light1.png" alt="Rentistan logo">
             </a>
-  
+
             <p class="section-text">
               Discover unparalleled living at Rentistan. Your dream space awaits – redefine your lifestyle
               with our premium rental houses. </p>
-  
+
             <ul class="contact-list">
-  
+
               <li>
                 <a href="#" class="contact-link">
                   <ion-icon name="location-outline"></ion-icon>
-  
+
                   <address>Chakwal, Punjab, Pakistan</address>
                 </a>
               </li>
-  
+
               <li>
                 <a href="tel:+0123456789" class="contact-link">
                   <ion-icon name="call-outline"></ion-icon>
-  
+
                   <span>+92-3175972977</span>
                 </a>
               </li>
-  
+
               <li>
                 <a href="mailto:contact@Rentistan.com" class="contact-link">
                   <ion-icon class="mt-1" name="mail-outline"></ion-icon>
-  
+
                   <span>contact@Rentistan.com</span>
                 </a>
               </li>
-  
+
             </ul>
-  
+
             <ul class="social-list">
-  
+
               <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
-  
+
               <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
-  
+
               <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
               </li>
-  
+
               <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-youtube"></ion-icon>
                 </a>
               </li>
-  
+
             </ul>
-  
+
           </div>
-  
+
           <div class="footer-link-box">
-  
+
             <ul class="footer-list">
-  
+
               <li>
                 <p class="footer-list-title">Company</p>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">About</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Blog</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">All Products</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Locations Map</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">FAQ</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Contact us</a>
               </li>
-  
+
             </ul>
-  
+
             <ul class="footer-list">
-  
+
               <li>
                 <p class="footer-list-title">Services</p>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Order tracking</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Wish List</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Login</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">My account</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Terms & Conditions</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Promotional Offers</a>
               </li>
-  
+
             </ul>
-  
+
             <ul class="footer-list">
-  
+
               <li>
                 <p class="footer-list-title">Customer Care</p>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Login</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">My account</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Wish List</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Order tracking</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">FAQ</a>
               </li>
-  
+
               <li>
                 <a href="#" class="footer-link">Contact us</a>
               </li>
-  
+
             </ul>
-  
+
           </div>
-  
+
         </div>
       </div>
-  
+
       <div class="footer-bottom">
         <div class="container">
-  
+
           <p class="copyright">
             &copy; 2024 <a href="#">Rentistan</a>. All Rights Reserved
           </p>
-  
+
         </div>
       </div>
-  
-    </footer>
-</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.8.1/firebase.js"></script>
-    <script src="./mail.js"></script>
-      <!-- 
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.8.1/firebase.js"></script>
+  <script src="./mail.js"></script>
+  <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
