@@ -47,5 +47,11 @@ const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
-    : header.classList.remove("active");
+  : header.classList.remove("active");
 }); 
+
+
+/**
+ * Contact Form
+ */
+
