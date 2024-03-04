@@ -1,27 +1,14 @@
-<!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Rentistan - Login</title>
   <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-  <link href='#' rel='stylesheet'>
   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <link rel="shortcut icon" href="../../favicon.jpg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
-
-
+  <script src="../js/main.js" type="module"></script>
 </head>
 
 <body>
@@ -196,6 +183,7 @@
             <input type="checkbox" id="checkbox" />
             <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
             <div class="login-btn-animate"> <a class="login-btn-signin">Login to your account</a> </div>
+            <div class="login-btn-animate" id="google-login-btn"> <a class="login-btn-signin">Login with google</a> </div>
           </form>
           <form class="form-signup" action="" method="post" name="form" id="loginForm">
             <label for="fullname">Full name:</label>
@@ -473,7 +461,7 @@
     });</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.8.1/firebase.js"></script>
-  <script src="./mail.js"></script>
+  <!-- <script src="./mail.js"></script> -->
   <!-- 
     - custom js link
   -->

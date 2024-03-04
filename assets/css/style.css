@@ -1,25 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
   --dark-jungle-green: hsl(188, 63%, 7%);
   --prussian-blue: hsl(200, 69%, 14%);
   --raisin-black-1: hsl(227, 29%, 13%);
@@ -1691,7 +1670,6 @@ button, a { transition: var(--transition); }
         .login-frame {
             height: 600px;
             width: 420px;
-            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS82mL0lCjn8cUhnzzoE1oYnjPkobX4USGFXw&usqp=CAU) no-repeat center center;
             background-size: cover;
             margin-left: auto;
             margin-right: auto;
